@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "fuente";
+    src: url(../fuente/ALGER.TTF) format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+h1 {
+    background: beige; 
+    color: blue; 
+    font-size: 3em;
+    font-family: "fuente";
+    text-align: center; 
+    text-decoration: underline;
+    }
+
+p {font-size:1.5 rem;}
+h2 {font-size: 1 rem; text-align: justify;}
+h3 {font-size: 1 rem; text-decoration: underline; 
+    font-family: 'Mukta', sans-serif;}
+
+nav {
+    display: flex;
+    background-color: palegreen;
+    flex-direction: row;
+}
+
+nav a {
+    padding: 14px 14px;
+    color: black;
+    background-color: aliceblue, 100%;
+    border: 2px rgb(26, 15, 1) solid;
+    font-size: 1.rem;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+      
+}
+
+nav a:hover{
+    background: white;
+    color: red;
+    width: 70%;
+    border: 10px solid blueviolet;
+    height: 10vh;
+}
+
+section {
+background-color: thistle;
+width:35%;
+float: left;
+margin: 0.3%;
+padding: 15px;
+box-sizing: border-box;
+border: 4px rgb(26, 15, 1) solid;
+height: 60vh;
+overflow: auto;
+font-display: flex;
+}
+
+section h3:hover{
+    background: white;
+    color: red;
+    width: 20%;
+    border: 10px solid blueviolet;
+}
+
+aside {
+display: flex;
+background-color: rgb(224, 241, 241);
+width: 62%;
+float: left;
+margin: 0.3%;
+padding: 0.2%;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+
+}
+
+footer {background-color: powderblue;
+clear: both;
+display: flex;
+width: 100%;
+right: 100%;
+flex-direction: row;
+}
+
+.redes {
+clear: both;
+width: 100%;
+right: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 10px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom:25px;
+    right:25px;
+    z-index:100;
+}
+.whatsapp :hover{
+    width: 200%;
+}
+header {
+    background: rgb(150, 39, 39);
+    height: 20%;
+}
+@media (max-width: 575px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        width: 100%;
+    }
+    header h1 {
+        background: whitesmoke; 
+        color:black; 
+        font-size: 2em;
+        font-family: "fuente";
+        text-align: center; 
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 767px) {
+    section, aside {
+       width: auto;
+       display: block;
+       background: yellowgreen;
+       font-size: 1.rem;
+
+    }
+}
+@media (max-width: 575px) {
+    aside {
+        display: flex;
+        background: blueviolet;
+
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        display: none;
+    }
+}
+.card-img-top{
+    height: 85%;
+}
